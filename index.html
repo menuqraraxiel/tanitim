@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Adı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image" href="./Images/katıktitle.png">
+</head>
+<body>
+    <header>
+        <img src="Images/logo.png" alt="Restoran Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu" class="card">
+        <h2>Menü</h2>
+<hr>
+<br>
+        <div class="menu-navbar">
+            <button onclick="showCategory('beverages')">İçecekler</button>
+            <button onclick="showCategory('wraps')">Dürümler</button>
+            <button onclick="showCategory('dishes')">Menüler</button>
+        </div>
+
+        
+        <div id="wraps" class="menu-category">
+            <h3>Dürümler</h3>
+            <div class="menu-item product-card">
+                <div class="product-image">
+                    <img src="Images/durum.jpg" alt="Dürüm">
+                </div>
+                <div class="product-info">
+                    <h4>Dürüm</h4>
+                    <p>Lezzetli dürüm içeriği.</p>
+                    <span><strong>₺10.00</strong></span>
+                </div>
+            </div>
+            <!-- Diğer dürüm ürünleri eklenebilir -->
+        </div>
+        
+        <div id="dishes" class="menu-category">
+            <h3>Menüler</h3>
+            <div class="menu-item product-card">
+                <div class="product-image">
+                    <img src="Images/durummenu.png" alt="Köfte Menü">
+                </div>
+                <div class="product-info">
+                    <h4>Tavuk Dürüm Menü</h4>
+                    <p>Tavuk Dürüm, içecek,cips</p>
+                    <span><strong>₺30.00</strong></span>
+                </div>
+            </div>
+            <!-- Diğer menü ürünleri eklenebilir -->
+        </div>
+
+        <div id="beverages" class="menu-category">
+            <h3>İçecekler</h3>
+            <div class="menu-item product-card">
+                <div class="product-image">
+                    <img src="Images/cola.jpg" alt="Cola">
+                </div>
+                <div class="product-info">
+                    <h4>Cola</h4>
+                    <p>Soğuk, gazlı içecek.</p>
+                    <span><strong>₺5.00</strong></span>
+                </div>
+            </div>
+            <div class="menu-item product-card">
+                <div class="product-image">
+                    <img src="Images/fanta.jpg" alt="Fanta">
+                </div>
+                <div class="product-info">
+                    <h4>Fanta</h4>
+                    <p>Portakal aromalı gazlı içecek.</p>
+                    <span><strong>₺5.00</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+<div id="product-popup">
+    <div class="product-content">
+        <img src="" alt="Ürün Resmi">
+        <div class="product-info">
+            <h4></h4>
+            <p></p>
+            <span></span>
+        </div>
+    </div>
+    <button id="close-button">&times;</button>
+</div>
+
+    <section id="about" class="card">
+        <h2>Hakkımızda</h2>
+        <hr>
+        
+        <p>Restoranımız uzun yıllardır müşterilere en kaliteli yemekleri sunmaktadır. Misyonumuz, müşterilerimize unutulmaz bir yemek deneyimi yaşatmaktır.</p>
+    </section>
+    <section id="contact" class="card">
+        <h2>İletişim</h2>
+        <hr>
+        
+        <p>İletişim bilgilerimiz:</p>
+        <ul>
+            <li>Telefon: <a class="telefon-link" href="tel:05555555555">+90 555 555 55 55</a></li>
+            <li>E-posta: <a href="mailto:info@restoranadi.com">info@restoranadi.com</a></li>
+            <li>Adres: Restoran Caddesi, Şehir, Ülke</li>
+        </ul>
+    
+        <!-- Sosyal medya logolarını ekleyin -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/restoranadi/" target="_blank">
+                <img src="./Images/instagram.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://wa.me/905555555555" target="_blank">
+                <img src="./Images/whatsapp.png" alt="WhatsApp" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/restoranadi/" target="_blank">
+                <img src="Images/facebook.png" alt="Facebook" width="30" height="30">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restoran Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
